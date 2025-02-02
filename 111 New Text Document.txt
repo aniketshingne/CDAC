@@ -1,0 +1,16 @@
+// prg. to demo. abstract class
+interface Drawable{
+	void draw();
+//      public abstract void draw();
+}
+class Rectangle implements Drawable{
+	public void draw(){
+		System.out.println("drawing rect");
+	}
+}
+class InterfaceDemo{
+	public static void main(String args[]){
+		Drawable ref = new Rectangle();
+		ref.draw();		
+	}
+}
